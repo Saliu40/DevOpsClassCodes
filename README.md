@@ -61,3 +61,12 @@ Installing Jenkins Default Plugins to set up the GUI
 Create Jenkins User
 <img width="1920" height="1080" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/05adcad2-510e-41a8-920b-76d24b426872" />
 Jenkins welcoming page
+We are just going to configure Jenkins based on this Project needs only
+<img width="1920" height="1080" alt="Screenshot (28)" src="https://github.com/user-attachments/assets/60924fa3-ea71-453a-b027-7bc44aae7ca9" />
+Thats Jenkins Default GUI
+
+we start adding the needed plugins for this project
+<img width="952" height="810" alt="Screenshot 2025-01-23 212824" src="https://github.com/user-attachments/assets/07f59c0b-bbfe-4d82-9131-77e4274bae45" />
+go to manage Jenkins, Available Jenkins, and installed the following plugins:
+a. Deploy to container plugins
+b. Maven plugins (Maven is needed to build the Java project) as such the plugin will have to be installed since we are automating the process using jenkins
