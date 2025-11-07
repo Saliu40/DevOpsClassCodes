@@ -28,6 +28,7 @@ Key Tools & Technologies
 | Source Control      | Git / GitHub           |
 | OS Environment      | Ubuntu Linux           |
 
+1. Setting Up Tomcat Environment
 <img width="939" height="903" alt="Screenshot 2025-01-24 235403" src="https://github.com/user-attachments/assets/7e12830a-f23a-4a2e-a848-6ddeb27e2b32" />
 thats our Ubuntu Vagrant file well define to launch a VM where we will be hosting our Tomcat server, opened the neccessary ports for the puropose of this project.
 Tomcat is an open source webserver we use to host or run  java based applications. ​
@@ -42,5 +43,21 @@ Tomcat is up and running on my vagrant vm.
 running on port 8080 we earlier define and open on our vagfrant file above
 <img width="1905" height="1034" alt="Screenshot 2025-01-24 201235" src="https://github.com/user-attachments/assets/18bd39c7-0e6e-412e-96c4-4fa46d3f4969" />
 Above is he the manager app section where our web app
-will be deployed.
 
+2. Setting Up jenkins Server for our Project CICD
+we use Ubuntu WSL to Host our Jenkins Server
+<img width="960" height="580" alt="Screenshot 2025-01-24 223553" src="https://github.com/user-attachments/assets/5c1d7f59-7694-46e2-8767-6c6c063c9bec" />
+Jenkins Server Up, and Running
+For installing jenkins, check Jenkins Documentation for the latest code 
+will be deployed.
+<img width="1920" height="1080" alt="Screenshot (24)" src="https://github.com/user-attachments/assets/f0bdb6ee-124b-4c01-a83f-94d9cc9eeda0" />
+jenkins Up and running on Port 8080
+get the jenkins default password from Ur Vm to start configuration.
+
+3. Configuring our CICD Project on jenkins
+<img width="1920" height="1080" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/e5b0cae4-5ab7-45a0-8f08-c42ba7d86b3c" />
+Installing Jenkins Default Plugins to set up the GUI
+<img width="1920" height="1080" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/c58d9a83-843c-4fda-b6ce-7ca6fe8d4783" />
+Create Jenkins User
+<img width="1920" height="1080" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/05adcad2-510e-41a8-920b-76d24b426872" />
+Jenkins welcoming page
