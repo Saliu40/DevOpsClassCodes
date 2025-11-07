@@ -1,3 +1,5 @@
+<img width="1600" height="900" alt="CI_CD_Banner_Smaller_Font" src="https://github.com/user-attachments/assets/58437c93-249a-4bc9-9bc8-d992f1a01172" />
+
 Jenkins CI/CD Deployment to Apache Tomcat
 Project Title: 
 Automated CI/CD Pipeline for Java Web Application Deployment Using Jenkins and Apache Tomcat
