@@ -70,3 +70,18 @@ we start adding the needed plugins for this project
 go to manage Jenkins, Available Jenkins, and installed the following plugins:
 a. Deploy to container plugins
 b. Maven plugins (Maven is needed to build the Java project) as such the plugin will have to be installed since we are automating the process using jenkins
+
+<img width="932" height="954" alt="Screenshot 2025-01-24 232616" src="https://github.com/user-attachments/assets/8eb9ea18-ac9e-491c-ae04-7377f64cc11a" />
+add Mavin to tools after installing the plugins> go to manage jenkins >Tools >add Maven and save it for jenkins to recorgnized an used it when running the pipeline.
+
+<img width="917" height="1003" alt="Screenshot 2025-01-24 201913" src="https://github.com/user-attachments/assets/ce9a41bd-82b0-4c74-a646-ac6c8aa80359" />
+Creating Our Freestyle Project Pipeline for this our Demo Project
+click on new item on Ur jenkins >choose freestyle Project and give the pipeline a tittle 
+
+<img width="935" height="1001" alt="Screenshot 2025-01-24 202104" src="https://github.com/user-attachments/assets/6464178d-7a8a-4c66-9c30-83c54e1aa0f7" />
+it takes Us to the pipeline configuration phases where we are to configure our pipeline based on needs
+paste the copied Git project Url after selecting Git, we define this pipeline instructing Jenkins to pull the source code from our git rep.
+select the git branch our project is in.
+Note: we can configure our Jenkins Pipeline to run our codes in 2 diffrent ways:
+a. through a well define structured jenkinsfile included on Ur Git repo for jenkins to pull and use
+b. by writing the stages directly on the Jenkins pipeline in groovy language
