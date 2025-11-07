@@ -106,3 +106,25 @@ we go to manage jenkins, locate credentials, click  on add credentials, select g
 Add your tomcat username under username section,​
 add password under the password section,​
 give it an id on the id section and click on  create.
+
+Time To Build Our Project
+<img width="933" height="941" alt="Screenshot 2025-01-25 012426" src="https://github.com/user-attachments/assets/1934df97-f2d8-4e99-b9c4-36c530212483" />
+After successfull Configuration, To build Ur Jenkins Job:​
+we go to the dashboard, click on the job, and click on  Build now
+#Remember, You will encounter errors on the 1st few build based on either typo errors, or other common errors 
+always go to Ur Jenkins console output to identify Ur pipeline errors and fix it till U get it right.
+#Once U get it right, thats all, Ur pipeline is automated and forever active, you can go further to create a Git Jenkins Webhook, so that git and jekins will bond together for when Developers Make code changes, github will trigered Ur Jenkins to run the pipeline. #U can aslo go a step further to create a slak notifications, or AWS SNS so You can be getting emails when Ur pipeline failed or when theres any errors.
+
+<img width="1808" height="926" alt="Screenshot 2025-01-25 012212" src="https://github.com/user-attachments/assets/aecba058-f7f8-480e-8323-5acf34964a0c" />
+my Jenkins Console output after the pipeline successfully run without a single error
+
+<img width="1901" height="1017" alt="Screenshot 2025-01-25 012244" src="https://github.com/user-attachments/assets/8dd62c8a-9b88-477a-9849-9cb605d0659a" />
+
+My jenkins Pipeline fetch the Code from Github, Build the Code Using maven, and deploy Host the application on the Tomcat Server.
+
+<img width="1907" height="1018" alt="Screenshot 2025-01-25 012259" src="https://github.com/user-attachments/assets/0f6dddfd-4a49-4696-8c21-b62c237e1b3d" />
+
+Our WebApp.
+
+
+
