@@ -85,3 +85,24 @@ select the git branch our project is in.
 Note: we can configure our Jenkins Pipeline to run our codes in 2 diffrent ways:
 a. through a well define structured jenkinsfile included on Ur Git repo for jenkins to pull and use
 b. by writing the stages directly on the Jenkins pipeline in groovy language
+
+<img width="928" height="865" alt="Screenshot 2025-01-24 202416" src="https://github.com/user-attachments/assets/81aad604-2cfd-4146-ad45-d681603357aa" />
+We scroll down to Build step, click on add build step to select invoke top-level maven targets​
+select the maven we earlier installed and added to tools,​
+add 'clean package' on the goal section. #we are instructing jenkins on what to do with the codes which is to build the code using Maven.
+
+<img width="907" height="994" alt="Screenshot 2025-01-24 202829" src="https://github.com/user-attachments/assets/f25801b5-cb65-4767-bedb-216684bd6015" />
+
+1. scrolled down to post build actions, select deploy war/ear to container,​
+2. On the War/ear files section, write 'target/*war' ​
+(that’s the name of the artifact it will deploy to tomcat server after maven build).​
+3. On the container section, add Tomcat 9.x remote, (depending on the tomcat Version used).​
+4. Then I added credential (my tomcat login details​
+the last step in adding  tomcat urls,  that is the Urls of the vm my tomcat is running from)​
+
+<img width="883" height="814" alt="Screenshot 2025-01-24 202756" src="https://github.com/user-attachments/assets/f933b45e-48f1-478c-be3d-de64174faade" />
+Adding tomcat login details on jenkins Credentials to enable Authentications:​
+we go to manage jenkins, locate credentials, click  on add credentials, select global tools, leave  it as username & password under kind.​
+Add your tomcat username under username section,​
+add password under the password section,​
+give it an id on the id section and click on  create.
